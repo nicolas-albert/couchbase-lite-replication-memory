@@ -6,4 +6,6 @@ Sample project to see the memory consumption during a CBL replication of 200k.
 
 I add a *final long cap = 20000;* that cancel and redo a new replication each *cap* document replicated : the memory is released.
 
-![chart](cbl-replication-chart)
+![chart](cbl-replication-chart.png)
+
+But it could be nice to don't do this kind of trick that cause many error logs.
